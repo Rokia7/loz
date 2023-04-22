@@ -4,6 +4,14 @@
   </div>
 
   <div class="content">
+    <div class="warpper-btn-toggle">
+      <mat-button-toggle-group name="textFormat" aria-label="Text Format" [formControl]="typeFormat">
+        <mat-button-toggle value="none">{{'ACTION.DEFAULT' | translate}}</mat-button-toggle>
+        <mat-button-toggle value="uppercase">{{'ACTION.UPPERCASE' | translate}}</mat-button-toggle>
+        <mat-button-toggle value="lowercase">{{'ACTION.LOWERCASE' | translate}}</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+
     <mat-form-field appearance="outline">
       <mat-label translate>LABEL.TRANSLATION_ID</mat-label>
 
@@ -11,7 +19,7 @@
         [placeholder]="'LABEL.TRANSLATION_ID' | translate"
         (input)="onTranslationIdChange$.next(input.value)"
         (keyup.enter)="create()"
-        [(ngModel)]="translationId"
+        [formControl]="translationId"
       >
 
       <mat-hint align=end [ngSwitch]="isValid$ | async">

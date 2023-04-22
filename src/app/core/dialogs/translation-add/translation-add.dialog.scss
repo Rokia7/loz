@@ -41,6 +41,13 @@
     mat-hint.error {
       color: var(--color-warn);
     }
+
+    .warpper-btn-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      padding: 12px 0;
+    }
   }
 
   .footer {
@@ -50,8 +57,8 @@
     width: 100%;
     min-height: 56px;
     max-height: 56px;
-    border-top: 1px solid rgba(0,0,0,.12);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
     padding: 0 12px;
-    background: #F4F4F4;
+    background: #f4f4f4;
   }
 }

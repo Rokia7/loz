@@ -63,7 +63,7 @@ export class DialogsService {
     this.matDialog.open(TranslationAddDialog, {
       autoFocus: true,
       width: '580px',
-      height: '264px',
+      height: '312px',
       maxWidth: '94vw',
       maxHeight: '94vh',
     });
