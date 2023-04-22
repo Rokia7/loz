@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { CoreComponentsModule } from '../components/components.module';
 import { MaterialComponentsModule } from '../modules/material.module';
@@ -26,6 +26,7 @@ const DIALOGS = [
 
 @NgModule({
   imports: [
+    ReactiveFormsModule,
     CommonModule,
     FormsModule,
     CoreComponentsModule,
